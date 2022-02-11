@@ -18,6 +18,8 @@ pipeline {
         AWS_ACCESS_KEY_ID = credentials('aws_access_key')
         AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
         PATH = "$TF_HOME:$PATH"
+        HTTP_PROXY = "http://proxy-lb.s-mxs.net:8080"
+        HTTPS_PROXY = "http://proxy-lb.s-mxs.net:8080"
     }
 
     stages {
